@@ -49,9 +49,9 @@ const Gasto = ({gasto, setGastoEditar, eliminarGasto}) => {
                 trailingActions={trailingActions()}
             >
               
-            <div className="gasto sombra">
+            <div className="gasto sombra row">
                 
-                <div className="contenido-gasto">
+                <div className="contenido-gasto col-sm-12 col-md-9">
 
                     <img src={diccionarioIconos[categoria]} alt="iconos" />
 
@@ -59,7 +59,7 @@ const Gasto = ({gasto, setGastoEditar, eliminarGasto}) => {
 
                         <p className="categoria">{categoria}</p>
 
-                        <p className="nombre-gasto">{nombre}</p>
+                        <p className="nombre-gasto text-break">{nombre}</p>
 
                         <p className="fecha-gasto">Agregado el: <span>{formatearFecha(fecha)}</span></p>
 
@@ -67,7 +67,7 @@ const Gasto = ({gasto, setGastoEditar, eliminarGasto}) => {
 
                 </div>
                 
-                <p className="cantidad-gasto">${cantidad}</p>
+                <p className="cantidad-gasto col-sm-12 col-md-2">${cantidad}</p>
             
             </div>
         </SwipeableListItem>
