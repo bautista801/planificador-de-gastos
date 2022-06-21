@@ -7,7 +7,7 @@ const Filtros = ({filtro, setFiltro}) => {
             <div className='campo row'>
                 <label className='col-sm-12 col-md-6'>Filtrar gastos</label>
 
-                <select className='form-select col-sm-12 col-md-6'
+                <select className='form-select col-sm-12 col-md-6 text-uppercase fs-3'
                     value={filtro}
                     onChange={e => setFiltro(e.target.value)}
                 >
